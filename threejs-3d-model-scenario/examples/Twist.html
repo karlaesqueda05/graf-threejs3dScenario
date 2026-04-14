@@ -212,12 +212,8 @@
 							// -----------------------------------------------------------
 							// Aplicar un material de agua o translúcido al modelo
 							child.material = new THREE.MeshStandardMaterial({
-								color: 0xff3300,  // Color rojo acuático
-								transparent: true,
-								opacity: 0.9,
-								roughness: 0.5,
-								metalness: 0.7
-							});
+      						map: new THREE.TextureLoader().load('models/rgbe/S.jpg')
+  							});
 							// -----------------------------------------------------------
 
 							child.castShadow = true;
